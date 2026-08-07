@@ -1,0 +1,68 @@
+{
+  "user": {
+    "id": "u123",
+    "name": "Arjun Kumar",
+    "avatar": "https://i.pravatar.cc/150?u=arjun",
+    "currentStreak": 11,
+    "longestStreak": 11,
+    "joinDate": "2023-10-01",
+    "needsComeback": true,
+    "isFirstTime": false
+  },
+  "progress": [
+    {
+      "id": 1,
+      "status": "completed",
+      "taskTitle": "Setup GitHub & LinkedIn",
+      "taskDescription": "Create your GitHub repository for the 60 days of code challenge. Make your first commit. Post on LinkedIn about your commitment.",
+      "submission": {
+        "githubUrl": "https://github.com/arjun/60-days",
+        "linkedinUrl": "https://linkedin.com/post/arjun/1",
+        "submittedAt": "2023-10-01T10:00:00Z"
+      }
+    },
+    {
+      "id": 2,
+      "status": "completed",
+      "taskTitle": "Variables and Data Types",
+      "taskDescription": "Learn about variables, data types, and basic operators. Write a program to calculate compound interest.",
+      "submission": {
+        "githubUrl": "https://github.com/arjun/60-days/day2",
+        "linkedinUrl": "https://linkedin.com/post/arjun/2",
+        "submittedAt": "2023-10-02T10:00:00Z"
+      }
+    },
+    {
+      "id": 11,
+      "status": "completed",
+      "taskTitle": "Array Methods",
+      "taskDescription": "Deep dive into map, filter, and reduce. Solve 3 problems using these methods.",
+      "submission": {
+        "githubUrl": "https://github.com/arjun/60-days/day11",
+        "linkedinUrl": "https://linkedin.com/post/arjun/11",
+        "submittedAt": "2023-10-11T10:00:00Z"
+      }
+    },
+    {
+      "id": 12,
+      "status": "missed",
+      "taskTitle": "Introduction to React",
+      "taskDescription": "Understand components, state, and props. Build a simple counter application.",
+      "submission": null
+    },
+    {
+      "id": 13,
+      "status": "pending",
+      "taskTitle": "React Hooks: useEffect",
+      "taskDescription": "Learn how to fetch data from an API using useEffect and display it in a list.",
+      "submission": null
+    },
+    {
+      "id": 14,
+      "status": "locked",
+      "taskTitle": "Routing in React",
+      "taskDescription": "Setup react-router-dom and navigate between multiple pages.",
+      "submission": null
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 import { ReactNode, useState } from 'react';
 import { useLocation, Link } from 'react-router-dom';
-import { ArrowLeft, Monitor, Smartphone, CheckCircle2 } from 'lucide-react';
+import { ArrowLeft, Monitor, Smartphone } from 'lucide-react';
 import { twMerge } from 'tailwind-merge';
 import { clsx, type ClassValue } from 'clsx';
 

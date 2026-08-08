@@ -19,8 +19,8 @@ export default function Layout({ children }: { children: ReactNode }) {
       {/* Desktop Background */}
       <div className="hidden md:block absolute inset-0 bg-gradient-to-br from-blue-50/90 via-white/80 to-purple-50/90 backdrop-blur-3xl -z-10" />
 
-      {/* View Toggle - Fixed at top-left */}
-      <div className="fixed top-4 left-4 md:top-6 md:left-6 flex items-center gap-2 bg-white/90 backdrop-blur-md p-2 rounded-full shadow-sm border border-gray-200 z-[100]">
+      {/* View Toggle - Fixed at top-right */}
+      <div className="fixed top-2 right-6 md:top-4 md:right-6 flex items-center gap-2 bg-white/90 backdrop-blur-md p-2 rounded-full shadow-sm border border-gray-200 z-[100]">
         <button 
           onClick={() => setIsDesktopView(false)}
           className={cn("p-2 rounded-full transition-colors flex items-center justify-center", !isDesktopView ? "bg-white shadow-md text-blue-600" : "text-gray-500 hover:text-gray-900")}

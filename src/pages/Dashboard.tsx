@@ -144,7 +144,7 @@ export default function Dashboard() {
             <div className="inline-block px-2 py-1 bg-red-500/20 rounded text-xs font-bold uppercase tracking-wider mb-3 text-red-300 border border-red-500/20">
               Streak At Risk
             </div>
-            <h3 className="font-bold text-2xl mb-1 text-white relative z-10">You missed Day {todayTask?.id - 1 || 'yesterday'}.</h3>
+            <h3 className="font-bold text-2xl mb-1 text-white relative z-10">You missed Day {todayTask ? (todayTask.id - 1 || 'yesterday') : 'yesterday'}.</h3>
             <p className="text-gray-300 text-sm mb-6 font-light relative z-10">Use a Streak Freeze to protect your <span className="font-bold text-red-400">{user.currentStreak}-day</span> streak?</p>
             
             {freezes > 0 ? (

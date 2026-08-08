@@ -145,8 +145,7 @@ export default function DayChallenge() {
         ) : (
           <div className="animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
             <h3 className="font-bold text-white text-xl mb-6 tracking-tight">Submit Proof of Work</h3>
-            <form id="submission-form" onSubmit={handleSubmit} className="space-y-6">
-              
+            <form id="submission-form" onSubmit={handleSubmit} className="space-y-6 pb-36 md:pb-0">
               <div className="group relative">
                 <div className="absolute -inset-0.5 bg-gradient-to-r from-gray-800 to-gray-700 rounded-2xl blur opacity-30 group-focus-within:opacity-100 group-focus-within:from-primary group-focus-within:to-accent transition duration-500"></div>
                 <div className="relative bg-surface rounded-2xl p-1 border border-white/5">
@@ -182,26 +181,28 @@ export default function DayChallenge() {
                 </div>
                 <p className="text-[11px] text-gray-500 mt-2 ml-2 font-medium tracking-wide">Tag #ABTalks #60DaysOfCode</p>
               </div>
-            </form>
 
-            {/* Sticky bottom button */}
-            <div className="fixed bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-background via-background/95 to-transparent pb-8 z-50 md:absolute md:rounded-b-[2.5rem]">
-              <button 
-                type="submit"
-                form="submission-form"
-                className={cn(
-                  "w-full text-white font-bold py-4 rounded-2xl shadow-[0_10px_40px_rgba(0,0,0,0.4)] hover:shadow-[0_10px_50px_rgba(0,0,0,0.6)] transition-all flex items-center justify-center gap-2 min-h-[56px] text-lg hover:-translate-y-1 relative overflow-hidden group",
-                  isComeback 
-                    ? "bg-gradient-to-r from-orange-500 to-red-600 shadow-red-500/30" 
-                    : "bg-gradient-to-r from-primary to-accent shadow-primary/30"
-                )}
-              >
-                <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out"></div>
-                <span className="relative z-10 flex items-center gap-2">
-                  {isComeback ? "Rescue My Streak" : "Submit Work"} <ChevronRight size={20} className="group-hover:translate-x-1 transition-transform" />
-                </span>
-              </button>
-            </div>
+              <div className="h-24" />
+
+              {/* Sticky bottom button */}
+              <div className="fixed bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-background via-background/95 to-transparent pb-8 z-50 md:absolute md:rounded-b-[2.5rem]">
+                <button 
+                  type="submit"
+                  disabled={!githubUrl || !linkedinUrl}
+                  className={cn(
+                    "w-full text-white font-bold py-4 rounded-2xl shadow-[0_10px_40px_rgba(0,0,0,0.4)] hover:shadow-[0_10px_50px_rgba(0,0,0,0.6)] transition-all flex items-center justify-center gap-2 min-h-[56px] text-lg hover:-translate-y-1 relative overflow-hidden group disabled:opacity-60 disabled:cursor-not-allowed",
+                    isComeback 
+                      ? "bg-gradient-to-r from-orange-500 to-red-600 shadow-red-500/30" 
+                      : "bg-gradient-to-r from-primary to-accent shadow-primary/30"
+                  )}
+                >
+                  <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out"></div>
+                  <span className="relative z-10 flex items-center gap-2">
+                    {isComeback ? "Rescue My Streak" : "Submit Work"} <ChevronRight size={20} className="group-hover:translate-x-1 transition-transform" />
+                  </span>
+                </button>
+              </div>
+            </form>
           </div>
         )}
       </div>

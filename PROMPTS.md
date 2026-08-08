@@ -199,5 +199,58 @@ and run it again and keep in mind the changes must be visible
 
 ---
 
+## Prompt 6 — Mobile/Desktop Toggle and UI Fixes
+
+**Date:** 8 Aug 2026
+**Tool used:** Google Antigravity
+
+**Prompt:**
+```text
+Make the following fixes to the current ABTalks redesign project:
+
+1. Remove the "Designed for Mobile" section entirely — this includes the 
+   heading "Designed for Mobile", the paragraph text ("This challenge is 
+   optimized for a mobile-first learning experience..."), and the 
+   "Open ABTalks Website" button. This section should no longer appear 
+   anywhere on the page.
+
+2. Center the mobile phone preview frame on the page by default (not left- 
+   or right-aligned) — it should sit centered both horizontally and 
+   vertically in the viewport when the page first loads.
+
+3. Add a view toggle above the preview:
+   - Default state: shows the mobile frame (390px width), centered on the page.
+   - Add a small icon button (PC/monitor icon) that, when clicked, switches 
+     the preview from the mobile frame to a full desktop-width layout 
+     (the page content expanding to fill the browser width, not confined 
+     to a phone frame).
+   - Clicking the mobile icon (or toggling back) should return to the 
+     centered mobile frame view.
+   - This toggle should work on all three routes (/, /dashboard, /day/12).
+
+4. Update the "Out of Scope" section so it contains exactly these items, 
+   in this order:
+   - Authentication
+   - Real User Accounts
+   - Production Database
+   - Recruiter Dashboard
+   - Admin Panel
+   - Matching ABTalks Internal Tech Stack
+   Below the list, add this note: "Mocked JSON data is intentionally used 
+   for demonstration."
+
+Do not change or remove any other existing functionality — current streak 
+logic, today's task card, journey progress, and edge-case handling 
+(zero streak, missed day, empty profile) must remain exactly as they are.
+
+After making these changes, verify all three routes still render correctly 
+at 390px width in the mobile toggle view, and confirm the desktop toggle 
+view also displays without layout breaks.
+```
+
+**What it built:** Updated `Layout.tsx` to implement a centralized mobile frame by default with an interactive top toggle to switch between a mobile-constrained 390px view and full-desktop-width view. Removed the 'Designed for Mobile' sidebar block, while maintaining the 'Out of Scope' section cleanly positioned so it does not interfere with the center alignment of the mobile frame.
+
+---
+
 <!-- Keep adding a new "## Prompt N" section every time you give AI a new instruction.
      Match this file to what you actually built — judges cross-check this against your commits. -->

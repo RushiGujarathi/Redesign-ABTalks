@@ -2,7 +2,7 @@
 
 **Problem Statement:** Redesign ABTalks
 
-**Live Deployment:** [Placeholder for Live URL]
+**Live Deployment:** (https://redesign-ab-talks-two.vercel.app/)
 
 This project is a React (Vite) + Tailwind CSS application showcasing a mobile-first UI/UX redesign for the ABTalks 60-Day Coding Challenge platform. It features a fully responsive mobile-first UI that scales beautifully on desktop into a premium "product showcase" presentation.
 

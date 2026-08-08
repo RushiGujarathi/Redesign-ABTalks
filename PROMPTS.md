@@ -411,3 +411,124 @@ these video is free to watch
 
 **What it built:** Added a green `FREE` pill badge next to the `▶ Watch` button on each resource-linked task step card, so students immediately know the video costs nothing to watch.
 
+---
+
+## Prompt 16 — Fix Logo Visibility (White Logo on White Background)
+
+**Date:** 8 Aug 2026
+**Tool used:** Google Antigravity (Claude Sonnet)
+
+**Prompt:**
+```
+logo white color and background white so it is not visible — change logo to black color, proper professional
+```
+
+**What it built:** Added `style={{ filter: 'brightness(0) saturate(100%)' }}` to the logo `<img>` in `Layout.tsx`. This CSS filter converts any white logo to solid black without modifying the image file, making it clearly visible on the light header background. Also added the same fix to the Landing page header logo.
+
+---
+
+## Prompt 17 — Premium Tech-Dev Hero Tagline
+
+**Date:** 8 Aug 2026
+**Tool used:** Google Antigravity (Claude Sonnet)
+
+**Prompt:**
+```
+"Transform from student to developer." — make it look like a tech/dev style like on developer platforms
+```
+
+**What it built:** Redesigned the hero section tagline in `Landing.tsx` with a premium developer-platform aesthetic:
+- Added a monospace terminal chip: `$ abtalks start --journey`
+- Increased heading size to `text-[1.75rem] font-extrabold`
+- "student" rendered in muted grey to contrast against the highlighted word
+- "developer" rendered with a blue→purple gradient (`linear-gradient(135deg, #4F6FE8, #7C3AED)`)
+- Added a blinking `_` cursor after "developer" using a CSS `@keyframes blink` animation (`.hero-cursor` class in `index.css`)
+- Inspired by Vercel/Linear/GitHub landing page aesthetics
+
+---
+
+## Prompt 18 — LinkedIn Draft Copy Button + Submit Button Fix
+
+**Date:** 8 Aug 2026
+**Tool used:** Google Antigravity (Claude Sonnet)
+
+**Prompt:**
+```
+Add a "Copy this into your LinkedIn post box after submission" button after the draft, and check the submit button on mobile
+```
+
+**What it built:** Two improvements to `DayChallenge.tsx`:
+1. **LinkedIn Copy Button** — A `Copy` button (using `lucide-react` Copy/Check icons) appears next to the "Suggested LinkedIn Draft" label once draft content exists. On click, it copies the draft to the clipboard using `navigator.clipboard.writeText()`, then transitions to a green "Copied! ✓" state for 2.5 seconds before resetting.
+2. **Submit Button Fix** — The submit button had incorrect styling (`bg-white text-text-primary`), making it look like a ghost button. Fixed to use `btn-primary` (solid blue) for normal mode and `bg-red-600` with red shadow for comeback/rescue mode.
+
+---
+
+## Prompt 19 — Full Dark Mode Implementation with Moon/Sun Toggle
+
+**Date:** 8 Aug 2026
+**Tool used:** Google Antigravity (Claude Sonnet)
+
+**Prompt:**
+```
+Add a moon/sun dark mode toggle — proper professional dark mode on all pages (PC and mobile), not plain black, use proper dark colors
+```
+
+**What it built:** Implemented a full, persistent dark mode system across the entire application:
+
+- **Toggle button** — Moon 🌙 / Sun ☀️ icon button added to the top-right control bar in `Layout.tsx`, visible on every page across both mobile and desktop views
+- **Tailwind config** — Added `darkMode: 'class'` to `tailwind.config.js` to enable class-based dark mode switching
+- **CSS custom properties** — Replaced all hardcoded hex values in `index.css` with CSS variables (e.g., `var(--surface)`, `var(--border)`, `var(--text-primary)`) with two sets of values:
+  - **Light:** `--bg: #F8FAFC`, `--surface: #FFFFFF`, `--border: #E2E8F0`, `--text-primary: #0F172A`
+  - **Dark (deep navy):** `--bg: #111827`, `--surface: #1E2A3A`, `--border: #2D3F55`, `--text-primary: #F0F6FF`
+- **Auto logo filter** — Added `.logo-adaptive` CSS class: `brightness(0)` in light mode (black logo), `brightness(0) invert(1)` in dark mode (white logo) — no JS needed
+- **Persistence** — Dark mode preference is saved to `localStorage` under `abtalks-theme` and restored on reload
+- **All components** respond automatically: cards, inputs, textareas, buttons, badges, headers, borders — everything transitions with `0.25s ease`
+- **Step icons** on Landing page use RGBA inline styles that look correct in both modes
+
+---
+
+## Prompt 20 — Fix Form Order: Submit Button Below LinkedIn Draft
+
+**Date:** 8 Aug 2026
+**Tool used:** Google Antigravity (Claude Sonnet)
+
+**Prompt:**
+```
+The Submit button is appearing before the LinkedIn Draft section — fix the order so Draft comes before Submit
+```
+
+**What it built:** Restructured `DayChallenge.tsx` submission section:
+- **Root cause** — The Submit button used `fixed bottom-0` sticky positioning, which caused it to visually overlap mid-page content when scrolling on mobile
+- **Fix** — Removed the `fixed bottom-0` sticky wrapper entirely; moved the Submit button inside `<form>` as the last element, placed after the LinkedIn Draft textarea
+- Removed `pb-32` bottom padding (which was the offset for the now-removed sticky button)
+- Correct page scroll order now: GitHub URL → LinkedIn URL + Auto-Draft → Draft textarea + Copy → helper text → **Submit Work button**
+
+---
+
+## Prompt 21 — Remove "Welcome back" Label from Dashboard Header
+
+**Date:** 8 Aug 2026
+**Tool used:** Google Antigravity (Claude Sonnet)
+
+**Prompt:**
+```
+Remove the "Welcome back" text that appears above the student's name on the dashboard header
+```
+
+**What it built:** Removed the `<p className="text-xs text-text-muted font-medium">Welcome back</p>` line from the profile header in `Dashboard.tsx`. The header now shows only the student name directly — cleaner and more professional.
+
+---
+
+## Prompt 22 — Remove Invisible ABTalks Logo from Dashboard Header
+
+**Date:** 8 Aug 2026
+**Tool used:** Google Antigravity (Claude Sonnet)
+
+**Prompt:**
+```
+Remove the ABTalks logo from the dashboard header — it is white and invisible on the light background
+```
+
+**What it built:** Removed the centered `<img src={LOGO_URL}>` element from the Dashboard profile header in `Dashboard.tsx`. This logo had no CSS filter applied, making it invisible (white on a white/light surface). The header now shows only the user avatar + name on the left and the rank badge (`#420`) on the right — clean, balanced, and professional.
+
+---

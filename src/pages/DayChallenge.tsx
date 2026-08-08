@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { Github, Linkedin, CheckCircle2, ChevronRight, AlertCircle, Sparkles } from 'lucide-react';
+import { Github, Linkedin, CheckCircle2, ChevronRight, AlertCircle, Sparkles, Copy, Check } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { cn } from '../components/Layout';
 import mockDataRaw from '../mock-data.json';
@@ -30,6 +30,7 @@ export default function DayChallenge() {
   const [submitted, setSubmitted]       = useState(day?.status === 'completed');
   const [githubTouched, setGithubTouched]     = useState(false);
   const [linkedinTouched, setLinkedinTouched] = useState(false);
+  const [copied, setCopied]             = useState(false);
 
   const isValidGithub  = (u: string) => /^https?:\/\/(www\.)?github\.com\//.test(u.trim());
   const isValidLinkedin = (u: string) => /^https?:\/\/(www\.)?linkedin\.com\//.test(u.trim());
@@ -65,6 +66,13 @@ export default function DayChallenge() {
     setPostDraft(`Day ${day.id} of #ABTalks: ${day.taskTitle}. ${day.taskDescription}\n\nToday I completed this challenge to keep building momentum on my career transition. #60DaysOfCode #StudentDeveloper #WebDev`);
   };
 
+  const handleCopyDraft = async () => {
+    if (!postDraft) return;
+    await navigator.clipboard.writeText(postDraft);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2500);
+  };
+
   const descriptionParts = day.taskDescription.split('. ').filter(Boolean);
 
   /* ── Success screen ── */
@@ -90,7 +98,7 @@ export default function DayChallenge() {
   }
 
   return (
-    <div className="flex-1 flex flex-col pb-32 min-h-screen">
+    <div className="flex-1 flex flex-col pb-6 min-h-screen">
 
       {/* ── Challenge Header ── */}
       <div className={cn(
@@ -242,7 +250,24 @@ export default function DayChallenge() {
 
           {/* LinkedIn Draft */}
           <div>
-            <label className="form-label">Suggested LinkedIn Draft</label>
+            <div className="flex items-center justify-between mb-1.5">
+              <label className="form-label mb-0">Suggested LinkedIn Draft</label>
+              {postDraft && (
+                <button
+                  type="button"
+                  onClick={handleCopyDraft}
+                  className={cn(
+                    'btn-sm flex items-center gap-1.5 text-xs font-semibold rounded-lg transition-all duration-200',
+                    copied
+                      ? 'bg-green-50 text-green-700 border border-green-200'
+                      : 'btn-secondary'
+                  )}
+                >
+                  {copied ? <Check size={12} /> : <Copy size={12} />}
+                  {copied ? 'Copied!' : 'Copy'}
+                </button>
+              )}
+            </div>
             <textarea
               value={postDraft}
               onChange={e => setPostDraft(e.target.value)}
@@ -250,27 +275,26 @@ export default function DayChallenge() {
               className="textarea min-h-[120px]"
               rows={5}
             />
-            <p className="form-helper">Copy this into your LinkedIn post box after submission.</p>
+            <p className="form-helper">Paste this into your LinkedIn post box after submission.</p>
+          </div>
+
+          {/* ── Submit Button (inline, below draft) ── */}
+          <div className="pt-2 pb-4">
+            <button
+              type="submit"
+              onClick={() => { setGithubTouched(true); setLinkedinTouched(true); }}
+              className={cn(
+                'btn-lg w-full justify-center text-base font-bold',
+                isComeback
+                  ? 'bg-red-600 text-white hover:bg-red-700 shadow-[0_4px_14px_rgba(220,38,38,0.3)]'
+                  : 'btn-primary shadow-brand'
+              )}
+            >
+              {isComeback ? 'Rescue My Streak' : 'Submit Work'} <ChevronRight size={18} />
+            </button>
           </div>
 
         </form>
-      </div>
-
-      {/* ── Sticky Submit Button ── */}
-      <div className="fixed bottom-0 left-0 right-0 z-50 bg-gradient-to-t from-white via-white/95 to-transparent pt-6 px-4 pb-6 md:absolute md:bottom-0">
-        <div className="max-w-[940px] mx-auto">
-          <button
-            type="submit"
-            form="submission-form"
-            onClick={() => { setGithubTouched(true); setLinkedinTouched(true); }}
-            className={cn(
-              'btn-lg w-full justify-center text-base font-bold shadow-brand',
-              isComeback ? 'bg-error text-white hover:bg-red-700' : 'btn-primary'
-            )}
-          >
-            {isComeback ? 'Rescue My Streak' : 'Submit Work'} <ChevronRight size={18} />
-          </button>
-        </div>
       </div>
 
     </div>

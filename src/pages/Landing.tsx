@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Target, CheckCircle2, Briefcase, ChevronRight, Zap } from 'lucide-react';
+import { LOGO_URL } from '../components/Layout';
 
 const steps = [
   {
@@ -31,7 +32,18 @@ export default function Landing() {
 
       {/* ── Landing Header ── */}
       <header className="flex items-center justify-between px-4 py-3 bg-white border-b" style={{ borderColor: '#E2E8F0' }}>
-        <span className="font-extrabold text-lg tracking-tight" style={{ color: '#0F172A' }}>
+        <img
+          src={LOGO_URL}
+          alt="ABTalks"
+          className="h-7 w-auto object-contain"
+          style={{ filter: 'brightness(0)' }}
+          onError={(e) => {
+            e.currentTarget.style.display = 'none';
+            (e.currentTarget.nextElementSibling as HTMLElement)!.style.display = 'flex';
+          }}
+        />
+        {/* Fallback text logo if image fails */}
+        <span className="font-extrabold text-lg tracking-tight hidden" style={{ color: '#0F172A' }}>
           AB<span style={{ color: '#4F6FE8' }}>Talks</span>
         </span>
         <span className="badge badge-brand text-[11px]">Beta</span>
@@ -40,19 +52,48 @@ export default function Landing() {
       {/* Hero */}
       <div className="px-6 pt-10 pb-8">
         {/* Badge */}
-        <div className="inline-flex items-center gap-2 badge badge-brand mb-6">
+        <div className="inline-flex items-center gap-2 badge badge-brand mb-5">
           <Zap size={12} />
           <span>60-Day Coding Challenge</span>
         </div>
 
-        <h1 className="text-4xl font-extrabold tracking-tight leading-tight mb-3" style={{ color: '#0F172A' }}>
-          AB<span style={{ color: '#4F6FE8' }}>Talks</span>
-        </h1>
+        <div className="mb-4">
+          <img
+            src={LOGO_URL}
+            alt="ABTalks"
+            className="h-10 w-auto object-contain"
+            style={{ filter: 'brightness(0)' }}
+            onError={(e) => {
+              e.currentTarget.style.display = 'none';
+              (e.currentTarget.nextElementSibling as HTMLElement)!.style.display = 'block';
+            }}
+          />
+          {/* Fallback */}
+          <h1 className="text-4xl font-extrabold tracking-tight leading-tight hidden" style={{ color: '#0F172A' }}>
+            AB<span style={{ color: '#4F6FE8' }}>Talks</span>
+          </h1>
+        </div>
 
-        <h2 className="text-2xl font-bold leading-snug mb-4" style={{ color: '#0F172A' }}>
-          Transform from student
+        {/* Code-style accent */}
+        <div className="inline-flex items-center gap-1.5 mb-3 px-2.5 py-1 rounded-md font-mono text-[11px] font-semibold"
+          style={{ backgroundColor: '#F0F4FF', color: '#4F6FE8', border: '1px solid #C7D3FB' }}>
+          <span style={{ color: '#94A3B8' }}>$</span> abtalks start --journey
+        </div>
+
+        <h2 className="text-[1.75rem] font-extrabold leading-tight mb-4 tracking-tight" style={{ color: '#0F172A' }}>
+          Transform from{' '}
+          <span style={{ color: '#64748B' }}>student</span>
           <br />
-          to <span style={{ color: '#4F6FE8' }}>developer.</span>
+          to{' '}
+          <span style={{
+            background: 'linear-gradient(135deg, #4F6FE8 0%, #7C3AED 100%)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            backgroundClip: 'text',
+          }}>
+            developer
+          </span>
+          <span className="hero-cursor" style={{ color: '#4F6FE8' }}>_</span>
         </h2>
 
         <p className="text-text-secondary text-base leading-relaxed mb-8">

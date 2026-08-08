@@ -97,18 +97,15 @@ export default function Layout({ children }: { children: ReactNode }) {
                   <ArrowLeft size={18} />
                 </button>
 
-                {/* Logo — styled text always visible; image overlays if it loads */}
+                {/* Logo — image only */}
                 <div className="flex items-center gap-2 relative">
                   <img
                     src={LOGO_URL}
                     alt=""
                     aria-hidden="true"
-                    className="h-7 w-auto object-contain absolute opacity-0"
-                    onLoad={(e) => { (e.target as HTMLImageElement).style.opacity = '1'; }}
+                    className="h-7 w-auto object-contain"
+                    style={{ filter: 'brightness(0) saturate(100%)' }}
                   />
-                  <span className="font-extrabold text-lg tracking-tight" style={{ color: '#0F172A' }}>
-                    AB<span style={{ color: '#4F6FE8' }}>Talks</span>
-                  </span>
                 </div>
 
                 {/* Right placeholder for symmetry */}

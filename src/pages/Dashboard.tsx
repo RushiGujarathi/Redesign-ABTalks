@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Flame, Trophy, ShieldAlert, ChevronRight, Clock, Snowflake, Info, User as UserIcon, Sparkles } from 'lucide-react';
-import { cn } from '../components/Layout';
+import { cn, LOGO_URL } from '../components/Layout';
 import mockDataRaw from '../mock-data.json';
 import { MockData, DayProgress } from '../types';
 
@@ -85,7 +85,7 @@ export default function Dashboard() {
 
       {/* ── Profile Header ── */}
       <div className="px-4 py-4 bg-surface border-b border-border">
-        <div className="max-w-[1040px] mx-auto flex items-center justify-between">
+        <div className="max-w-[1040px] mx-auto flex items-center justify-between relative">
           <div className="flex items-center gap-3">
             {user.avatar ? (
               <img src={user.avatar} alt="Profile" className="w-10 h-10 rounded-full border border-border object-cover" />
@@ -95,10 +95,12 @@ export default function Dashboard() {
               </div>
             )}
             <div>
-              <p className="text-xs text-text-muted font-medium">Welcome back</p>
               <h2 className="text-base font-bold text-text-primary">{user.name}</h2>
             </div>
           </div>
+
+
+
           <div className="flex items-center gap-2">
             <div className="badge badge-warning">
               <Trophy size={11} /> <span>#420</span>

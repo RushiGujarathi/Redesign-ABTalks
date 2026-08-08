@@ -111,8 +111,8 @@ export default function Dashboard() {
                 </div>
               )}
               <div>
-                <p className="text-gray-400 text-xs font-semibold tracking-wide uppercase">Welcome back,</p>
-                <h2 className="text-white font-bold text-xl tracking-tight">{user.name}</h2>
+                <p className="text-gray-500 text-[10px] font-bold tracking-widest uppercase mb-0.5">Welcome back,</p>
+                <h2 className="text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-200 font-black text-xl tracking-tight">{user.name}</h2>
               </div>
             </div>
             <div className="flex flex-wrap items-center gap-3">
@@ -129,8 +129,8 @@ export default function Dashboard() {
               <div className="absolute -right-4 -bottom-4 opacity-10 text-primary">
                 <Sparkles size={120} />
               </div>
-              <h3 className="font-bold text-2xl mb-1 text-white relative z-10">Ready to begin?</h3>
-              <p className="text-gray-400 text-sm mb-6 font-light relative z-10">Start your 60-day journey today. Consistency is key.</p>
+              <h3 className="font-black text-white text-2xl mb-1 relative z-10">Ready to begin?</h3>
+              <p className="text-gray-400 text-sm mb-6 font-light relative z-10 leading-relaxed">Start your <span className="text-blue-300 font-semibold">60-day journey</span> today. Consistency is key.</p>
               <div className="flex items-center gap-3 font-extrabold text-4xl text-gray-700 relative z-10">
                 <Flame size={32} /> 0 <span className="text-lg text-gray-500 font-medium">Day Streak</span>
               </div>
@@ -138,11 +138,11 @@ export default function Dashboard() {
           ) : (user.needsComeback && !streakFrozen) ? (
             <div className="glass-dark rounded-3xl p-6 border border-red-500/30 relative overflow-hidden shadow-[0_0_30px_rgba(239,68,68,0.15)]">
               <ShieldAlert className="absolute -right-4 -bottom-4 w-32 h-32 text-red-500 opacity-5" />
-              <div className="inline-block px-2 py-1 bg-red-500/20 rounded text-xs font-bold uppercase tracking-wider mb-3 text-red-300 border border-red-500/20">
-                Streak At Risk
+              <div className="inline-block px-2.5 py-1 bg-red-500/20 rounded-lg text-[10px] font-black uppercase tracking-wider mb-3 text-red-300 border border-red-500/20">
+                ⚠ Streak At Risk
               </div>
-              <h3 className="font-bold text-2xl mb-1 text-white relative z-10">You missed Day {todayTask ? (todayTask.id - 1 || 'yesterday') : 'yesterday'}.</h3>
-              <p className="text-gray-300 text-sm mb-6 font-light relative z-10">Use a Streak Freeze to protect your <span className="font-bold text-red-400">{user.currentStreak}-day</span> streak?</p>
+              <h3 className="font-black text-2xl mb-1 text-white relative z-10">You missed Day {todayTask ? (todayTask.id - 1 || 'yesterday') : 'yesterday'}.</h3>
+              <p className="text-gray-300 text-sm mb-6 font-light relative z-10 leading-relaxed">Use a Streak Freeze to protect your <span className="font-bold text-red-300">{user.currentStreak}-day streak</span>?</p>
               {freezes > 0 ? (
                 <div className="flex gap-3 relative z-10">
                   <button onClick={handleUseFreeze} className="flex-1 bg-gradient-to-r from-blue-600 to-primary text-white font-bold py-3 px-4 rounded-xl text-sm flex items-center justify-center gap-2 transition-all min-h-[44px]">
@@ -223,8 +223,8 @@ export default function Dashboard() {
       {/* Heatmap */}
       <div className="px-6 mt-10 relative z-10">
         <div className="flex items-center justify-between mb-5">
-          <h3 className="font-bold text-white text-xl tracking-tight">Your Journey</h3>
-          <span className="text-primary font-bold text-xs bg-primary/10 px-3 py-1.5 rounded-full border border-primary/20">{progressPercentage}% Done</span>
+          <h3 className="font-black text-white text-xl tracking-tight">Your Journey</h3>
+          <span className="text-primary font-black text-xs bg-primary/10 px-3 py-1.5 rounded-full border border-primary/20">{progressPercentage}% Done</span>
         </div>
         <div className="glass-dark rounded-3xl p-6">
           <div className="flex flex-wrap gap-[6px]">
@@ -240,7 +240,7 @@ export default function Dashboard() {
               <Info size={16} className="text-primary" />
             </div>
             <p className="text-xs text-gray-400 leading-relaxed font-light mt-0.5">
-              <strong className="text-gray-200 font-semibold">Streak Freeze:</strong> Protects your streak if you miss a day. You get 2 per challenge. Use them wisely!
+              <strong className="text-gray-100 font-bold">Streak Freeze:</strong> Protects your streak if you miss a day. You get <span className="text-blue-300 font-semibold">2 per challenge.</span> Use them wisely!
             </p>
           </div>
         </div>

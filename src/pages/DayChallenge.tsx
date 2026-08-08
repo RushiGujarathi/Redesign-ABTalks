@@ -239,13 +239,18 @@ export default function DayChallenge() {
                   <CheckCircle2 size={48} className="text-green-400" />
                 </div>
               </div>
-              <h2 className="text-3xl font-extrabold text-white mb-3 tracking-tight">
-                {isComeback ? "Streak Rescued!" : "Task Completed!"}
+              <h2 className={cn(
+                "text-3xl font-black mb-3 tracking-tight",
+                isComeback
+                  ? "text-transparent bg-clip-text bg-gradient-to-r from-orange-300 to-red-300"
+                  : "text-transparent bg-clip-text bg-gradient-to-r from-green-300 to-emerald-400"
+              )}>
+                {isComeback ? "Streak Rescued! 🔥" : "Task Completed! ✅"}
               </h2>
-              <p className="text-gray-400 mb-10 max-w-[280px] text-base leading-relaxed font-light">
+              <p className="text-gray-400 mb-10 max-w-[280px] text-[0.95rem] leading-relaxed font-light">
                 {isComeback
-                  ? "You've earned the Resilience Badge. Your streak is safe."
-                  : "Great job! Your proof of work is recorded. See you tomorrow."}
+                  ? <><span className="text-orange-300 font-semibold">Resilience Badge earned.</span> Your streak is safe — keep going.</>
+                  : <><span className="text-green-300 font-semibold">Proof of work recorded.</span> See you tomorrow for Day {(day.id + 1)}.</>}
               </p>
               <button
                 onClick={() => navigate('/dashboard')}
@@ -266,8 +271,8 @@ export default function DayChallenge() {
                   <ChevronRight size={18} className={isComeback ? "text-red-400" : "text-primary"} />
                 </div>
                 <div>
-                  <h3 className="font-bold text-white text-lg tracking-tight">Submit Proof of Work</h3>
-                  <p className="text-gray-500 text-xs mt-0.5">All links are publicly verifiable</p>
+                  <h3 className="font-black text-white text-lg tracking-tight">Submit Proof of Work</h3>
+                  <p className="text-gray-500 text-[11px] mt-0.5 font-medium tracking-wide">All links are <span className="text-gray-400">publicly verifiable</span></p>
                 </div>
               </div>
 

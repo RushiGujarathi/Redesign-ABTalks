@@ -254,3 +254,160 @@ view also displays without layout breaks.
 
 <!-- Keep adding a new "## Prompt N" section every time you give AI a new instruction.
      Match this file to what you actually built — judges cross-check this against your commits. -->
+
+---
+
+## Prompt 7 — Student Name, Avatar & Remove Back to Home
+
+**Date:** 8 Aug 2026
+**Tool used:** Google Antigravity
+
+**Prompt:**
+```
+change the name into Shantanu kauate, change the girl image into boy image
+and remove the back to home option
+```
+
+**What it built:** Updated `mock-data.json` active student name from "Arjun Kumar" to "Shantanu kauate" and swapped the pravatar avatar seed to a male photo (`?img=12`). Removed the "Back to Home" `<Link>` button from the Dashboard header, keeping only the rank badge.
+
+---
+
+## Prompt 8 — Form Validation: Show Errors on Empty Submit
+
+**Date:** 8 Aug 2026
+**Tool used:** Google Antigravity
+
+**Prompt:**
+```
+show error if GitHub Repository / LinkedIn Post is not uploaded
+```
+
+**What it built:** Added `githubTouched` and `linkedinTouched` state to `DayChallenge.tsx`. Inline red error messages appear below each field when the field is left empty after blur or after a submit attempt. The card border, label, and icon all turn red on error. The hint text ("Must contain today's commit") is replaced by the error message when invalid.
+
+---
+
+## Prompt 9 — Instant Error on Submit Button Click
+
+**Date:** 8 Aug 2026
+**Tool used:** Google Antigravity
+
+**Prompt:**
+```
+submit button work click kele ke lagech read erro show zala pahiji
+(Translation: When the submit button is clicked, the red error should show immediately)
+```
+
+**What it built:** Removed `disabled={!githubUrl || !linkedinUrl}` from the submit button (disabled buttons swallow clicks). Added an `onClick` handler that immediately sets both fields as touched, triggering instant red errors. Button looks slightly dimmed (`opacity-70`) when fields are empty but remains always clickable.
+
+---
+
+## Prompt 10 — URL Domain Validation (github.com / linkedin.com)
+
+**Date:** 8 Aug 2026
+**Tool used:** Google Antigravity
+
+**Prompt:**
+```
+it is necessary to upload a .github then it submits and upload a link.com 
+then linkedin search and work finish
+(Translation: GitHub field must be a valid github.com URL; LinkedIn field must be a valid linkedin.com URL)
+```
+
+**What it built:** Added `isValidGithub()` and `isValidLinkedin()` regex validators. GitHub errors now distinguish between "required" vs "must be a valid github.com URL". LinkedIn errors distinguish between "required" vs "must be a valid linkedin.com URL". Submission is blocked unless both URLs pass domain validation.
+
+---
+
+## Prompt 11 — Hide Task Info After Completion
+
+**Date:** 8 Aug 2026
+**Tool used:** Google Antigravity
+
+**Prompt:**
+```
+task completed zala var Day 12 / Introduction to React / Understand components, 
+state, and props. Build a simple counter application. he remove karyche ahe
+(Translation: After task is completed, the Day 12 task header should be removed/hidden)
+```
+
+**What it built:** Wrapped the entire header section (Day badge, task title, description) in `{!submitted && ...}` so it completely disappears once the student submits proof of work. The success screen (checkmark + "Task Completed!" + "Back to Dashboard") now shows cleanly without the task card above it.
+
+---
+
+## Prompt 12 — Premium Task Header Redesign
+
+**Date:** 8 Aug 2026
+**Tool used:** Google Antigravity
+
+**Prompt:**
+```
+Day 12 / Introduction to React / description ase simple piska thode attractive 
+kele tar and awesome kele tar
+(Translation: Make the task header section more attractive and awesome)
+```
+
+**What it built:** Completely redesigned the `DayChallenge.tsx` header:
+- Two animated blurred background orbs (blue/purple for normal, red/orange for comeback mode)
+- "Today's Challenge" badge with a pulsing dot indicator
+- Large `64×64` glowing day-number block card beside the gradient title
+- Subtitle "ABTalks 60-Day Challenge" below the title
+- Each description sentence is now a numbered step card with glassmorphism border and hover highlight
+- Comeback (streak rescue) mode gets a dramatic red/orange orb variant with "⚡ Rescue Mission" badge
+
+---
+
+## Prompt 13 — Form Redesign + Optional Video Link Field
+
+**Date:** 8 Aug 2026
+**Tool used:** Google Antigravity
+
+**Prompt:**
+```
+auajan thode attractive and suppose apan tana na video link dila available asetal asa
+(Translation: Make the submission form more attractive, and add an optional video link field)
+```
+
+- New section header with icon + subtitle "All links are publicly verifiable"
+- Each input field is now a clean card with a colored left-border accent (gray for GitHub, blue for LinkedIn, indigo for Draft)
+- Removed heavy glassmorphism shadows; replaced with subtle `bg-white/[0.03]` cards with hover states
+- `Auto-draft` button restyled as a compact rounded pill
+- LinkedIn draft textarea redesigned to match the new card style
+
+---
+
+## Prompt 14 — Learning Resource Video Links on Task Steps
+
+**Date:** 8 Aug 2026
+**Tool used:** Google Antigravity
+
+**Prompt:**
+```
+provide a video means upon click on the understand state and props then provide 
+a link so get a idea how to do these. Video Link / Understand components, state, 
+and props. after click on these — remove the submission video field, add a 
+resource video link on the task step cards instead.
+```
+
+**What it built:**
+- Added `resources?: string[]` field to `DayProgress` type in `types.ts` — each index maps to a description sentence
+- Added YouTube resource links to Day 12 in `mock-data.json`:
+  - Step 1 (Understand components, state, and props) → `youtube.com/watch?v=Ke90Tje7VS0`
+  - Step 2 (Build a simple counter application) → `youtube.com/watch?v=RVFAyFWO4go`
+- Step cards with a resource become `<a>` links that open the video in a new tab on click
+- A `▶ Watch` badge appears on the right side of the card
+- Cards without resources stay as plain non-clickable `<div>` elements
+- Removed the "Video Link (optional)" submission form field entirely
+
+---
+
+## Prompt 15 — Free Badge on Resource Video Links
+
+**Date:** 8 Aug 2026
+**Tool used:** Google Antigravity
+
+**Prompt:**
+```
+these video is free to watch
+```
+
+**What it built:** Added a green `FREE` pill badge next to the `▶ Watch` button on each resource-linked task step card, so students immediately know the video costs nothing to watch.
+

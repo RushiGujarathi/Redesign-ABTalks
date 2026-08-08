@@ -16,7 +16,7 @@ export default function Landing() {
       {/* Hero Section */}
       <div className="pt-20 px-6 pb-12 relative z-10">
         
-        <div className="animate-fade-in-up" style={{ animationDelay: '0.1s', opacity: 0 }}>
+        <div className="animate-fade-in-up flex justify-center" style={{ animationDelay: '0.1s', opacity: 0 }}>
           <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-white/[0.05] border border-white/10 rounded-full mb-8 backdrop-blur-md shadow-[0_0_15px_rgba(59,130,246,0.15)]">
             <Sparkles className="text-primary w-4 h-4" />
             <span className="text-gray-300 text-xs font-semibold uppercase tracking-wider">The 60-Day Challenge</span>
@@ -56,47 +56,47 @@ export default function Landing() {
       </div>
 
       {/* How it works - Bento Box Style */}
-      <div className="px-6 relative z-10 flex-1 flex flex-col space-y-4 pb-8 animate-fade-in-up" style={{ animationDelay: '0.6s', opacity: 0 }}>
-        
-        <div className="glass-dark rounded-3xl p-6 relative overflow-hidden group hover:border-primary/30 transition-colors">
-          <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full blur-2xl group-hover:bg-primary/20 transition-colors"></div>
-          <div className="flex gap-4 relative z-10">
-            <div className="flex-shrink-0 w-12 h-12 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center text-primary shadow-[0_0_15px_rgba(59,130,246,0.2)]">
-              <Target size={24} />
-            </div>
-            <div>
-              <h4 className="text-lg font-bold text-gray-100 mb-1">1. Daily Tasks</h4>
-              <p className="text-gray-400 text-sm leading-relaxed font-light">Get a curated, bite-sized coding task every single day. No fluff, just practical skills.</p>
+      <div className="px-6 relative z-10 flex-1 pb-10 animate-fade-in-up" style={{ animationDelay: '0.6s', opacity: 0 }}>
+        <div className="grid grid-cols-1 gap-4">
+          <div className="glass-dark relative overflow-hidden rounded-3xl p-6 border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.18)] transition-all hover:border-primary/30 min-w-0">
+            <div className="absolute top-4 right-4 w-28 h-28 bg-primary/10 rounded-full blur-2xl"></div>
+            <div className="relative z-10 flex flex-col gap-4">
+              <div className="flex-shrink-0 w-12 h-12 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center text-primary shadow-sm">
+                <Target size={24} />
+              </div>
+              <div className="min-w-0">
+                <h4 className="text-lg font-semibold text-white mb-2">1. Daily Tasks</h4>
+                <p className="text-sm text-gray-400 leading-relaxed font-light">Get a curated, bite-sized coding task every single day. No fluff, just practical skills.</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div className="glass-dark rounded-3xl p-6 relative overflow-hidden group hover:border-accent/30 transition-colors">
-          <div className="absolute top-0 right-0 w-32 h-32 bg-accent/10 rounded-full blur-2xl group-hover:bg-accent/20 transition-colors"></div>
-          <div className="flex gap-4 relative z-10">
-            <div className="flex-shrink-0 w-12 h-12 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center text-accent shadow-[0_0_15px_rgba(139,92,246,0.2)]">
-              <CheckCircle2 size={24} />
-            </div>
-            <div>
-              <h4 className="text-lg font-bold text-gray-100 mb-1">2. Proof of Work</h4>
-              <p className="text-gray-400 text-sm leading-relaxed font-light">Write the code, push it to GitHub, and post your learnings on LinkedIn. Build your public portfolio.</p>
+          <div className="glass-dark relative overflow-hidden rounded-3xl p-6 border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.18)] transition-all hover:border-accent/30 min-w-0">
+            <div className="absolute top-4 right-4 w-28 h-28 bg-accent/10 rounded-full blur-2xl"></div>
+            <div className="relative z-10 flex flex-col gap-4">
+              <div className="flex-shrink-0 w-12 h-12 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center text-accent shadow-sm">
+                <CheckCircle2 size={24} />
+              </div>
+              <div className="min-w-0">
+                <h4 className="text-lg font-semibold text-white mb-2">2. Proof of Work</h4>
+                <p className="text-sm text-gray-400 leading-relaxed font-light">Write the code, push it to GitHub, and post your learnings on LinkedIn. Build your public portfolio.</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div className="glass-dark rounded-3xl p-6 relative overflow-hidden group hover:border-amber-500/30 transition-colors">
-          <div className="absolute top-0 right-0 w-32 h-32 bg-amber-500/10 rounded-full blur-2xl group-hover:bg-amber-500/20 transition-colors"></div>
-          <div className="flex gap-4 relative z-10">
-            <div className="flex-shrink-0 w-12 h-12 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center text-amber-400 shadow-[0_0_15px_rgba(251,191,36,0.2)]">
-              <Briefcase size={24} />
-            </div>
-            <div>
-              <h4 className="text-lg font-bold text-gray-100 mb-1">3. Get Hired</h4>
-              <p className="text-gray-400 text-sm leading-relaxed font-light">Recruiters track consistency. A 60-day streak of public commits is better than any resume.</p>
+          <div className="glass-dark relative overflow-hidden rounded-3xl p-6 border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.18)] transition-all hover:border-amber-500/30 min-w-0">
+            <div className="absolute top-4 right-4 w-28 h-28 bg-amber-500/10 rounded-full blur-2xl"></div>
+            <div className="relative z-10 flex flex-col gap-4">
+              <div className="flex-shrink-0 w-12 h-12 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center text-amber-400 shadow-sm">
+                <Briefcase size={24} />
+              </div>
+              <div className="min-w-0">
+                <h4 className="text-lg font-semibold text-white mb-2">3. Get Hired</h4>
+                <p className="text-sm text-gray-400 leading-relaxed font-light">Recruiters track consistency. A 60-day streak of public commits is better than any resume.</p>
+              </div>
             </div>
           </div>
         </div>
-        
       </div>
     </div>
   );

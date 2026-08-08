@@ -19,6 +19,7 @@ export type DayProgress = {
   status: DayStatus;
   taskTitle: string;
   taskDescription: string;
+  resources?: string[]; // Per-step video/resource URLs (index maps to descriptionParts)
   submission?: {
     githubUrl: string;
     linkedinUrl: string;

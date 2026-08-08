@@ -3,8 +3,8 @@
     "active": {
       "user": {
         "id": "u123",
-        "name": "Arjun Kumar",
-        "avatar": "https://i.pravatar.cc/150?u=arjun",
+        "name": "Shantanu kauate",
+        "avatar": "https://i.pravatar.cc/150?img=12",
         "currentStreak": 11,
         "longestStreak": 11,
         "joinDate": "2023-10-01",
@@ -139,6 +139,10 @@
           "status": "pending",
           "taskTitle": "Introduction to React",
           "taskDescription": "Understand components, state, and props. Build a simple counter application.",
+          "resources": [
+            "https://www.youtube.com/watch?v=Ke90Tje7VS0",
+            "https://www.youtube.com/watch?v=RVFAyFWO4go"
+          ],
           "submission": null
         },
         {

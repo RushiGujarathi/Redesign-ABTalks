@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Landing from './pages/Landing';
-import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import DayChallenge from './pages/DayChallenge';
 
@@ -11,7 +10,6 @@ function App() {
       <Layout>
         <Routes>
           <Route path="/" element={<Landing />} />
-          <Route path="/login" element={<Login />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/day/:id" element={<DayChallenge />} />
         </Routes>

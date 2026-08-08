@@ -1,68 +1,1402 @@
 {
-  "user": {
-    "id": "u123",
-    "name": "Arjun Kumar",
-    "avatar": "https://i.pravatar.cc/150?u=arjun",
-    "currentStreak": 11,
-    "longestStreak": 11,
-    "joinDate": "2023-10-01",
-    "needsComeback": true,
-    "isFirstTime": false
-  },
-  "progress": [
-    {
-      "id": 1,
-      "status": "completed",
-      "taskTitle": "Setup GitHub & LinkedIn",
-      "taskDescription": "Create your GitHub repository for the 60 days of code challenge. Make your first commit. Post on LinkedIn about your commitment.",
-      "submission": {
-        "githubUrl": "https://github.com/arjun/60-days",
-        "linkedinUrl": "https://linkedin.com/post/arjun/1",
-        "submittedAt": "2023-10-01T10:00:00Z"
-      }
+  "students": {
+    "active": {
+      "user": {
+        "id": "u123",
+        "name": "Arjun Kumar",
+        "avatar": "https://i.pravatar.cc/150?u=arjun",
+        "currentStreak": 11,
+        "longestStreak": 11,
+        "joinDate": "2023-10-01",
+        "needsComeback": false,
+        "isFirstTime": false,
+        "freezes": 2
+      },
+      "progress": [
+        {
+          "id": 1,
+          "status": "completed",
+          "taskTitle": "Setup GitHub & LinkedIn",
+          "taskDescription": "Create your GitHub repository for the 60 days of code challenge. Make your first commit. Post on LinkedIn about your commitment.",
+          "submission": {
+            "githubUrl": "https://github.com/arjun/60-days",
+            "linkedinUrl": "https://linkedin.com/post/arjun/1",
+            "submittedAt": "2023-10-01T10:00:00Z"
+          }
+        },
+        {
+          "id": 2,
+          "status": "completed",
+          "taskTitle": "Variables and Data Types",
+          "taskDescription": "Learn about variables, data types, and basic operators. Write a program to calculate compound interest.",
+          "submission": {
+            "githubUrl": "https://github.com/arjun/60-days/day2",
+            "linkedinUrl": "https://linkedin.com/post/arjun/2",
+            "submittedAt": "2023-10-02T10:00:00Z"
+          }
+        },
+        {
+          "id": 3,
+          "status": "completed",
+          "taskTitle": "Day 3 Challenge",
+          "taskDescription": "Solve 3 problems focusing on intermediate concepts for day 3.",
+          "submission": {
+            "githubUrl": "https://github.com/arjun/60-days/day3",
+            "linkedinUrl": "https://linkedin.com/post/arjun/3",
+            "submittedAt": "2023-10-003T10:00:00Z"
+          }
+        },
+        {
+          "id": 4,
+          "status": "completed",
+          "taskTitle": "Day 4 Challenge",
+          "taskDescription": "Solve 3 problems focusing on intermediate concepts for day 4.",
+          "submission": {
+            "githubUrl": "https://github.com/arjun/60-days/day4",
+            "linkedinUrl": "https://linkedin.com/post/arjun/4",
+            "submittedAt": "2023-10-004T10:00:00Z"
+          }
+        },
+        {
+          "id": 5,
+          "status": "completed",
+          "taskTitle": "Day 5 Challenge",
+          "taskDescription": "Solve 3 problems focusing on intermediate concepts for day 5.",
+          "submission": {
+            "githubUrl": "https://github.com/arjun/60-days/day5",
+            "linkedinUrl": "https://linkedin.com/post/arjun/5",
+            "submittedAt": "2023-10-005T10:00:00Z"
+          }
+        },
+        {
+          "id": 6,
+          "status": "completed",
+          "taskTitle": "Day 6 Challenge",
+          "taskDescription": "Solve 3 problems focusing on intermediate concepts for day 6.",
+          "submission": {
+            "githubUrl": "https://github.com/arjun/60-days/day6",
+            "linkedinUrl": "https://linkedin.com/post/arjun/6",
+            "submittedAt": "2023-10-006T10:00:00Z"
+          }
+        },
+        {
+          "id": 7,
+          "status": "completed",
+          "taskTitle": "Day 7 Challenge",
+          "taskDescription": "Solve 3 problems focusing on intermediate concepts for day 7.",
+          "submission": {
+            "githubUrl": "https://github.com/arjun/60-days/day7",
+            "linkedinUrl": "https://linkedin.com/post/arjun/7",
+            "submittedAt": "2023-10-007T10:00:00Z"
+          }
+        },
+        {
+          "id": 8,
+          "status": "completed",
+          "taskTitle": "Day 8 Challenge",
+          "taskDescription": "Solve 3 problems focusing on intermediate concepts for day 8.",
+          "submission": {
+            "githubUrl": "https://github.com/arjun/60-days/day8",
+            "linkedinUrl": "https://linkedin.com/post/arjun/8",
+            "submittedAt": "2023-10-008T10:00:00Z"
+          }
+        },
+        {
+          "id": 9,
+          "status": "completed",
+          "taskTitle": "Day 9 Challenge",
+          "taskDescription": "Solve 3 problems focusing on intermediate concepts for day 9.",
+          "submission": {
+            "githubUrl": "https://github.com/arjun/60-days/day9",
+            "linkedinUrl": "https://linkedin.com/post/arjun/9",
+            "submittedAt": "2023-10-009T10:00:00Z"
+          }
+        },
+        {
+          "id": 10,
+          "status": "completed",
+          "taskTitle": "Day 10 Challenge",
+          "taskDescription": "Solve 3 problems focusing on intermediate concepts for day 10.",
+          "submission": {
+            "githubUrl": "https://github.com/arjun/60-days/day10",
+            "linkedinUrl": "https://linkedin.com/post/arjun/10",
+            "submittedAt": "2023-10-010T10:00:00Z"
+          }
+        },
+        {
+          "id": 11,
+          "status": "completed",
+          "taskTitle": "Day 11 Challenge",
+          "taskDescription": "Solve 3 problems focusing on intermediate concepts for day 11.",
+          "submission": {
+            "githubUrl": "https://github.com/arjun/60-days/day11",
+            "linkedinUrl": "https://linkedin.com/post/arjun/11",
+            "submittedAt": "2023-10-011T10:00:00Z"
+          }
+        },
+        {
+          "id": 12,
+          "status": "pending",
+          "taskTitle": "Introduction to React",
+          "taskDescription": "Understand components, state, and props. Build a simple counter application.",
+          "submission": null
+        },
+        {
+          "id": 13,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 1",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 14,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 2",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 15,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 3",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 16,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 4",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 17,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 5",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 18,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 6",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 19,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 7",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 20,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 8",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 21,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 9",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 22,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 10",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 23,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 11",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 24,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 12",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 25,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 13",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 26,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 14",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 27,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 15",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 28,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 16",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 29,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 17",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 30,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 18",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 31,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 19",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 32,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 20",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 33,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 21",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 34,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 22",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 35,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 23",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 36,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 24",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 37,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 25",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 38,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 26",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 39,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 27",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 40,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 28",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 41,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 29",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 42,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 30",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 43,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 31",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 44,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 32",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 45,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 33",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 46,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 34",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 47,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 35",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 48,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 36",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 49,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 37",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 50,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 38",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 51,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 39",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 52,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 40",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 53,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 41",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 54,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 42",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 55,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 43",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 56,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 44",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 57,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 45",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 58,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 46",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 59,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 47",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 60,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 48",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        }
+      ]
     },
-    {
-      "id": 2,
-      "status": "completed",
-      "taskTitle": "Variables and Data Types",
-      "taskDescription": "Learn about variables, data types, and basic operators. Write a program to calculate compound interest.",
-      "submission": {
-        "githubUrl": "https://github.com/arjun/60-days/day2",
-        "linkedinUrl": "https://linkedin.com/post/arjun/2",
-        "submittedAt": "2023-10-02T10:00:00Z"
-      }
+    "new": {
+      "user": {
+        "id": "u124",
+        "name": "Priya Sharma",
+        "avatar": "https://i.pravatar.cc/150?u=priya",
+        "currentStreak": 0,
+        "longestStreak": 0,
+        "joinDate": "2023-10-15",
+        "needsComeback": false,
+        "isFirstTime": true,
+        "freezes": 2
+      },
+      "progress": [
+        {
+          "id": 1,
+          "status": "pending",
+          "taskTitle": "Setup GitHub & LinkedIn",
+          "taskDescription": "Create your GitHub repository for the 60 days of code challenge. Make your first commit. Post on LinkedIn about your commitment.",
+          "submission": null
+        },
+        {
+          "id": 2,
+          "status": "locked",
+          "taskTitle": "Variables and Data Types",
+          "taskDescription": "Learn about variables, data types, and basic operators. Write a program to calculate compound interest.",
+          "submission": null
+        },
+        {
+          "id": 3,
+          "status": "locked",
+          "taskTitle": "Day 3 Challenge",
+          "taskDescription": "Solve 3 problems focusing on intermediate concepts for day 3.",
+          "submission": null
+        },
+        {
+          "id": 4,
+          "status": "locked",
+          "taskTitle": "Day 4 Challenge",
+          "taskDescription": "Solve 3 problems focusing on intermediate concepts for day 4.",
+          "submission": null
+        },
+        {
+          "id": 5,
+          "status": "locked",
+          "taskTitle": "Day 5 Challenge",
+          "taskDescription": "Solve 3 problems focusing on intermediate concepts for day 5.",
+          "submission": null
+        },
+        {
+          "id": 6,
+          "status": "locked",
+          "taskTitle": "Day 6 Challenge",
+          "taskDescription": "Solve 3 problems focusing on intermediate concepts for day 6.",
+          "submission": null
+        },
+        {
+          "id": 7,
+          "status": "locked",
+          "taskTitle": "Day 7 Challenge",
+          "taskDescription": "Solve 3 problems focusing on intermediate concepts for day 7.",
+          "submission": null
+        },
+        {
+          "id": 8,
+          "status": "locked",
+          "taskTitle": "Day 8 Challenge",
+          "taskDescription": "Solve 3 problems focusing on intermediate concepts for day 8.",
+          "submission": null
+        },
+        {
+          "id": 9,
+          "status": "locked",
+          "taskTitle": "Day 9 Challenge",
+          "taskDescription": "Solve 3 problems focusing on intermediate concepts for day 9.",
+          "submission": null
+        },
+        {
+          "id": 10,
+          "status": "locked",
+          "taskTitle": "Day 10 Challenge",
+          "taskDescription": "Solve 3 problems focusing on intermediate concepts for day 10.",
+          "submission": null
+        },
+        {
+          "id": 11,
+          "status": "locked",
+          "taskTitle": "Day 11 Challenge",
+          "taskDescription": "Solve 3 problems focusing on intermediate concepts for day 11.",
+          "submission": null
+        },
+        {
+          "id": 12,
+          "status": "locked",
+          "taskTitle": "Introduction to React",
+          "taskDescription": "Understand components, state, and props. Build a simple counter application.",
+          "submission": null
+        },
+        {
+          "id": 13,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 1",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 14,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 2",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 15,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 3",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 16,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 4",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 17,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 5",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 18,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 6",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 19,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 7",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 20,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 8",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 21,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 9",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 22,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 10",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 23,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 11",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 24,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 12",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 25,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 13",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 26,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 14",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 27,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 15",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 28,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 16",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 29,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 17",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 30,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 18",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 31,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 19",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 32,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 20",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 33,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 21",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 34,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 22",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 35,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 23",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 36,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 24",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 37,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 25",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 38,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 26",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 39,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 27",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 40,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 28",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 41,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 29",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 42,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 30",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 43,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 31",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 44,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 32",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 45,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 33",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 46,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 34",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 47,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 35",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 48,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 36",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 49,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 37",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 50,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 38",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 51,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 39",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 52,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 40",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 53,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 41",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 54,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 42",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 55,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 43",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 56,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 44",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 57,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 45",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 58,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 46",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 59,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 47",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 60,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 48",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        }
+      ]
     },
-    {
-      "id": 11,
-      "status": "completed",
-      "taskTitle": "Array Methods",
-      "taskDescription": "Deep dive into map, filter, and reduce. Solve 3 problems using these methods.",
-      "submission": {
-        "githubUrl": "https://github.com/arjun/60-days/day11",
-        "linkedinUrl": "https://linkedin.com/post/arjun/11",
-        "submittedAt": "2023-10-11T10:00:00Z"
-      }
+    "missed": {
+      "user": {
+        "id": "u125",
+        "name": "Rahul Singh",
+        "avatar": "https://i.pravatar.cc/150?u=rahul",
+        "currentStreak": 9,
+        "longestStreak": 9,
+        "joinDate": "2023-10-01",
+        "needsComeback": true,
+        "isFirstTime": false,
+        "freezes": 2
+      },
+      "progress": [
+        {
+          "id": 1,
+          "status": "completed",
+          "taskTitle": "Setup GitHub & LinkedIn",
+          "taskDescription": "Create your GitHub repository for the 60 days of code challenge. Make your first commit. Post on LinkedIn about your commitment.",
+          "submission": {
+            "githubUrl": "https://github.com/arjun/60-days",
+            "linkedinUrl": "https://linkedin.com/post/arjun/1",
+            "submittedAt": "2023-10-01T10:00:00Z"
+          }
+        },
+        {
+          "id": 2,
+          "status": "completed",
+          "taskTitle": "Variables and Data Types",
+          "taskDescription": "Learn about variables, data types, and basic operators. Write a program to calculate compound interest.",
+          "submission": {
+            "githubUrl": "https://github.com/arjun/60-days/day2",
+            "linkedinUrl": "https://linkedin.com/post/arjun/2",
+            "submittedAt": "2023-10-02T10:00:00Z"
+          }
+        },
+        {
+          "id": 3,
+          "status": "completed",
+          "taskTitle": "Day 3 Challenge",
+          "taskDescription": "Solve 3 problems focusing on intermediate concepts for day 3.",
+          "submission": {
+            "githubUrl": "https://github.com/arjun/60-days/day3",
+            "linkedinUrl": "https://linkedin.com/post/arjun/3",
+            "submittedAt": "2023-10-003T10:00:00Z"
+          }
+        },
+        {
+          "id": 4,
+          "status": "completed",
+          "taskTitle": "Day 4 Challenge",
+          "taskDescription": "Solve 3 problems focusing on intermediate concepts for day 4.",
+          "submission": {
+            "githubUrl": "https://github.com/arjun/60-days/day4",
+            "linkedinUrl": "https://linkedin.com/post/arjun/4",
+            "submittedAt": "2023-10-004T10:00:00Z"
+          }
+        },
+        {
+          "id": 5,
+          "status": "completed",
+          "taskTitle": "Day 5 Challenge",
+          "taskDescription": "Solve 3 problems focusing on intermediate concepts for day 5.",
+          "submission": {
+            "githubUrl": "https://github.com/arjun/60-days/day5",
+            "linkedinUrl": "https://linkedin.com/post/arjun/5",
+            "submittedAt": "2023-10-005T10:00:00Z"
+          }
+        },
+        {
+          "id": 6,
+          "status": "completed",
+          "taskTitle": "Day 6 Challenge",
+          "taskDescription": "Solve 3 problems focusing on intermediate concepts for day 6.",
+          "submission": {
+            "githubUrl": "https://github.com/arjun/60-days/day6",
+            "linkedinUrl": "https://linkedin.com/post/arjun/6",
+            "submittedAt": "2023-10-006T10:00:00Z"
+          }
+        },
+        {
+          "id": 7,
+          "status": "completed",
+          "taskTitle": "Day 7 Challenge",
+          "taskDescription": "Solve 3 problems focusing on intermediate concepts for day 7.",
+          "submission": {
+            "githubUrl": "https://github.com/arjun/60-days/day7",
+            "linkedinUrl": "https://linkedin.com/post/arjun/7",
+            "submittedAt": "2023-10-007T10:00:00Z"
+          }
+        },
+        {
+          "id": 8,
+          "status": "completed",
+          "taskTitle": "Day 8 Challenge",
+          "taskDescription": "Solve 3 problems focusing on intermediate concepts for day 8.",
+          "submission": {
+            "githubUrl": "https://github.com/arjun/60-days/day8",
+            "linkedinUrl": "https://linkedin.com/post/arjun/8",
+            "submittedAt": "2023-10-008T10:00:00Z"
+          }
+        },
+        {
+          "id": 9,
+          "status": "completed",
+          "taskTitle": "Day 9 Challenge",
+          "taskDescription": "Solve 3 problems focusing on intermediate concepts for day 9.",
+          "submission": {
+            "githubUrl": "https://github.com/arjun/60-days/day9",
+            "linkedinUrl": "https://linkedin.com/post/arjun/9",
+            "submittedAt": "2023-10-009T10:00:00Z"
+          }
+        },
+        {
+          "id": 10,
+          "status": "missed",
+          "taskTitle": "Day 10 Challenge",
+          "taskDescription": "Solve 3 problems focusing on intermediate concepts for day 10.",
+          "submission": null
+        },
+        {
+          "id": 11,
+          "status": "pending",
+          "taskTitle": "Day 11 Challenge",
+          "taskDescription": "Solve 3 problems focusing on intermediate concepts for day 11.",
+          "submission": null
+        },
+        {
+          "id": 12,
+          "status": "locked",
+          "taskTitle": "Introduction to React",
+          "taskDescription": "Understand components, state, and props. Build a simple counter application.",
+          "submission": null
+        },
+        {
+          "id": 13,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 1",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 14,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 2",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 15,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 3",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 16,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 4",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 17,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 5",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 18,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 6",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 19,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 7",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 20,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 8",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 21,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 9",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 22,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 10",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 23,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 11",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 24,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 12",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 25,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 13",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 26,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 14",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 27,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 15",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 28,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 16",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 29,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 17",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 30,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 18",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 31,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 19",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 32,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 20",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 33,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 21",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 34,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 22",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 35,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 23",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 36,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 24",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 37,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 25",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 38,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 26",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 39,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 27",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 40,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 28",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 41,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 29",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 42,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 30",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 43,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 31",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 44,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 32",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 45,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 33",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 46,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 34",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 47,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 35",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 48,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 36",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 49,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 37",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 50,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 38",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 51,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 39",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 52,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 40",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 53,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 41",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 54,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 42",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 55,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 43",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 56,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 44",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 57,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 45",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 58,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 46",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 59,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 47",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        },
+        {
+          "id": 60,
+          "status": "locked",
+          "taskTitle": "Advanced Topic 48",
+          "taskDescription": "Locked content for future days.",
+          "submission": null
+        }
+      ]
     },
-    {
-      "id": 12,
-      "status": "missed",
-      "taskTitle": "Introduction to React",
-      "taskDescription": "Understand components, state, and props. Build a simple counter application.",
-      "submission": null
-    },
-    {
-      "id": 13,
-      "status": "pending",
-      "taskTitle": "React Hooks: useEffect",
-      "taskDescription": "Learn how to fetch data from an API using useEffect and display it in a list.",
-      "submission": null
-    },
-    {
-      "id": 14,
-      "status": "locked",
-      "taskTitle": "Routing in React",
-      "taskDescription": "Setup react-router-dom and navigate between multiple pages.",
-      "submission": null
+    "empty": {
+      "user": {
+        "id": "u126",
+        "name": "New Student",
+        "currentStreak": 0,
+        "longestStreak": 0,
+        "joinDate": "2023-10-16",
+        "needsComeback": false,
+        "isFirstTime": true,
+        "freezes": 2
+      },
+      "progress": []
     }
-  ]
+  }
 }

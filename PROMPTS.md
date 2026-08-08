@@ -148,5 +148,41 @@ Avoid excessive colors. Keep everything minimal and elegant.
 
 ---
 
+## Prompt 4 — Feature Enhancement (Streak Freeze, Heatmap, Dark Mode)
+
+**Date:** 8 Aug 2026
+**Tool used:** Google Antigravity
+
+**Prompt:**
+```text
+You are a Senior Product Designer and Senior Frontend Engineer continuing
+work on an existing project: a mobile-first (390px) React + Vite +
+TypeScript + Tailwind redesign of "ABTalks", a 60-day coding challenge
+platform for Indian college students.
+
+The base app already works: Landing (/), Dashboard (/dashboard), and Day
+page (/day/:id), all wired to mock-data.json with a types.ts defining the
+data shape, plus a desktop "product showcase" wrapper in Layout.tsx.
+
+DO NOT rebuild or restructure what exists. DO NOT change existing colors,
+routes, or the desktop showcase wrapper. First, open and read mock-data.json,
+types.ts, the Dashboard component, and the Day page component so you
+understand the current data shape and component structure before making any
+changes. Then implement the following, extending the existing types and
+components — do all steps in order, in this same session:
+
+STEP 1 — Multiple student states, reachable without login
+STEP 2 — Streak Freeze feature
+STEP 3 — 60-day contribution heatmap on Dashboard
+STEP 4 — Dark mode default + mobile ergonomics
+STEP 5 — Submission delight
+STEP 6 — Run and self-check at 390px
+STEP 7 — README
+```
+
+**What it built:** Implemented the `?state=` logic to handle new, active, missed, and empty student profiles. Built the Streak Freeze interaction flow on the Dashboard. Created a 60-day contribution heatmap. Refactored the entire mobile app to a modern dark mode default (`bg-gray-950`). Added a sticky submit button and a `canvas-confetti` success animation to the Day Challenge page.
+
+---
+
 <!-- Keep adding a new "## Prompt N" section every time you give AI a new instruction.
      Match this file to what you actually built — judges cross-check this against your commits. -->

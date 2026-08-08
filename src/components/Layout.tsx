@@ -22,24 +22,24 @@ export default function Layout({ children }: { children: ReactNode }) {
       <div className="w-full h-full md:h-auto flex flex-row items-center justify-center md:gap-16 lg:gap-24 md:p-8">
         
         {/* Mobile container - strictly max 390px for testing but centered */}
-        <div className="w-full md:w-[390px] bg-white min-h-screen md:min-h-0 md:h-[844px] md:rounded-[3rem] md:border-[14px] md:border-gray-900 md:shadow-[0_20px_50px_rgba(0,0,0,0.2)] relative overflow-x-hidden flex flex-col md:overflow-hidden shrink-0 ring-1 ring-gray-900/5">
+        <div className="w-full md:w-[390px] bg-background min-h-screen md:min-h-0 md:h-[844px] md:rounded-[3rem] md:border-[14px] md:border-gray-950 md:shadow-[0_20px_50px_rgba(0,0,0,0.4)] relative overflow-x-hidden flex flex-col md:overflow-hidden shrink-0 ring-1 ring-white/10">
           
           {/* Scrollable Area inside the phone */}
           <div className="flex-1 flex flex-col overflow-y-auto hide-scrollbar w-full relative">
             {/* Simple Header */}
             {!isLanding && (
-              <header className="px-5 pt-12 md:pt-6 pb-4 flex items-center justify-between sticky top-0 bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
+              <header className="px-5 pt-12 md:pt-6 pb-4 flex items-center justify-between sticky top-0 bg-background/80 backdrop-blur-md z-50 border-b border-white/5">
                 {location.pathname !== '/dashboard' ? (
-                  <Link to="/dashboard" className="text-gray-500 hover:text-gray-900 transition-colors">
+                  <Link to="/dashboard" className="text-gray-400 hover:text-white transition-colors">
                     <ArrowLeft size={24} />
                   </Link>
                 ) : (
                   <div className="w-6" /> // spacer
                 )}
-                <h1 className="font-bold text-xl tracking-tight text-gray-900">
-                  AB<span className="text-blue-600">Talks</span>
+                <h1 className="font-bold text-xl tracking-tight text-white">
+                  AB<span className="text-primary">Talks</span>
                 </h1>
-                <div className="w-6 h-6 rounded-full bg-gradient-to-tr from-blue-500 to-purple-500"></div>
+                <div className="w-6 h-6 rounded-full bg-gradient-to-tr from-primary to-accent"></div>
               </header>
             )}
 
